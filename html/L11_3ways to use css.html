@@ -3,18 +3,18 @@
 
     CSS can be added to HTML documents in 3 ways:
 
-    Inline - by using the style attribute inside HTML elements
+    1. Inline - by using the style attribute inside HTML elements
     Internal - by using a <style> element in the <head> section
     External - by using a <link> element to link to an external CSS file
 
-    Internal CSS
+    2. Internal CSS
     Internal or embedded CSS requires you to add <style> tag 
     in the <head> section of your HTML document.
 
     Disadvantages of Internal CSS:
     Adding the code to the HTML document can increase the page’s size and loading time.
 
-    External CSS
+    3. External CSS
     With external CSS, you’ll link your web pages to an external
     .css file, which can be created by any text editor in your device. 
     This CSS type is a more efficient method, especially for styling a large 
@@ -48,18 +48,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lesson11</title>
-    <!-- external css-->
+    <!-- 3. external css-->
     <link rel="stylesheet" href="../css/L11.css">
     <style>
         h2 {
-            /* internal css */
+            /* 2. internal css */
             color: red;
         }
     </style>
 </head>
 
 <body>
-    <!-- inline css -->
+    <!-- 1. inline css -->
     <h1 style="color: green;">Lorem ipsum dolor sit amet.</h1>
     <h2>Lorem ipsum dolor sit amet.</h2>
     <h3>Lorem ipsum dolor sit amet.</h3>

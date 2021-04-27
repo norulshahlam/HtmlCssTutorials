@@ -6,10 +6,18 @@ body{
   color: red;
 }
 
-h1{
+h1,h3{
   color: blue;
 }
 
 p{
   color: black;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.display{
+  display: none;
 }

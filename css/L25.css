@@ -13,12 +13,13 @@ h1 {
 /* for smart phone, as the screen always is <500px width*/
 @media (max-width: 500px) {
   body {
-    background: red;
+    background-color: red;
   }
 
   /* display smartphone when screen is <500px width*/
   #smartphone h1 {
     display: block;
+  
   }
 }
 
@@ -30,6 +31,7 @@ h1 {
 
   /* display tablet when screen is <500px width*/
   #tablet h1 {
+  
     display: block;
   }
 }
@@ -45,6 +47,7 @@ h1 {
     /* display normal when screen is <500px width*/
     #normal h1 {
       display: block;
+   
     }
   }
   
@@ -59,12 +62,13 @@ h1 {
     /* display widescreen when screen is <500px width */
     #widescreen h1 {
       display: block;
+     
     }
   }
 
   
 /* for landscape size, as the screen always is >500px height */
-@media (max-height: 1200px) {
+@media (min-height: 1200px) {
     body {
       background: orange;
     }
@@ -72,5 +76,6 @@ h1 {
     /* display landscape when screen is <500px height. change orientation to see the changes */
     #landscape h1 {
       display: block;
+     
     }
   }

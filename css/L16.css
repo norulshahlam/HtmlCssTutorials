@@ -5,7 +5,7 @@
   this sets bottom/top to 20px
   left/right to auto ie centre horizontally
   */
-  margin: auto;
+  margin: 10px auto;
   /* text-align: justify; */
 }
 .container-2{

@@ -21,6 +21,7 @@
     <title>lesson5</title>
 
     <style>
+        table,
         th,
         td {
             border: 1px solid black;
@@ -29,14 +30,18 @@
 </head>
 
 <body>
-    <!-- styling is not rekemended to use this way but i use it to show the borders -->
-    <table style="border: 1px solid black;">
-        <!-- the whole table-->
+
+    <!-- the whole table.
+        Note:
+        th is to define a cell in thead.
+        td is to define a cell in tbody -->
+    <table>
+        <!--header content in a table-->
         <thead>
-            <!--header content in a table-->
+            <!-- table row for -->
             <tr>
-                <!-- table row -->
-                <th>first name</th> <!-- col for the heading row. use 'th' if u are defining 'thead'  -->
+                <!-- col for the heading row.  -->
+                <th>first name</th>
                 <th>last name</th>
                 <th>email</th>
             </tr>
@@ -45,24 +50,20 @@
             <!-- body content in a table. this is where all content in table is inserted -->
             <tr>
                 <td>abc</td>
-                <!-- Defines a cell in a table. use 'td' if u are inside 'tbody'. see the diff above when 'thead' is used-->
                 <td>xyz</td>
                 <td>123@gmail.com</td>
             </tr>
             <tr>
                 <td>ddd</td>
-                <!-- Defines a cell in a table. use 'td' if u are inside 'tbody'. see the diff above when 'thead' is used-->
                 <td>dtg</td>
                 <td>7554@gmail.com</td>
             </tr>
             <tr>
                 <td>lho</td>
-                <!-- Defines a cell in a table. use 'td' if u are inside 'tbody'. see the diff above when 'thead' is used-->
                 <td>drth</td>
                 <td>976@gmail.com</td>
             </tr>
         </tbody>
     </table>
 </body>
-
 </html>

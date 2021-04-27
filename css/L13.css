@@ -1,4 +1,5 @@
 body{
+    /* font-stack - it will choose the 1st available font */
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     line-height: 1.6em;

@@ -5,9 +5,11 @@
     Position items. this is very important to understand how it works
 
     static	    Default value. not affected by tblr properties
-    absolute	Positioned relative to its parent element that is positioned 'relative'	
+    absolute	Positioned relative to its parent element that is 
+                positioned 'relative'	
     fixed	    Positioned relative to the viewport (browser window)
-    relative	Positioned relative to its normal position, so "left:20px" adds 20 pixels to 
+    relative	Positioned relative to its normal position, 
+                so "left:20px" adds 20 pixels to 
                 the element's LEFT position. this must be set in order for the item to be moved.
     sticky  	Positioned based on the user's scroll position
                 A sticky element toggles between relative and fixed, depending on the scroll position. 
@@ -35,17 +37,16 @@
 </head>
 
 <body>
-    <div id="box-1" class="box">box-1 is set to relative, z-index=1</div>
+    <div id="box-1" class="box">box-1 is set to relative, z-index=1. by default it is most top left from the body</div>
     <div class="container">
-        <div id="box-2" class="box">box-2 is inside blue container. To position an element relative to its parent,
-            the parent must be set to position: relative, and child must be set to absolute in order for this to work
+        <div id="box-2" class="box">box-2 is inside blue container div. To position an element relative to its parent,
+            the parent must be set to position: relative, and child must be set to absolute in order for this to work. now it is not set any position so it will go most top left towards the parent div
         </div>
-        <div id="box-3" class="box">box-3 is inside blue container. To position an element relative to its parent,
+        <div id="box-3" class="box">box-3 is inside blue container div. To position an element relative to its parent,
             the parent must be set to position: relative, and child must be set to absolute in order for this to work
         </div>
     </div>
-    <div id="box-4" class="box">box-4 position:fixed it will stay fixed in ref to
-        the preceding markup
+    <div id="box-4" class="box">box-4 position:fixed it will stay fixed in ref to the parent element ie body 
     </div>
     <div id="box-5" class="box">box-5 position:sticky, top:0px. this toggles
         between relative and fixed which means will stick to its preceding

@@ -34,7 +34,7 @@
   /* background-image: url("../img/thor.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; */
+  background-size: cover; - Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 
   /* below code is same as above */
 
