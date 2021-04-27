@@ -1,0 +1,50 @@
+/* this selects all <p> inside <div> */
+div p {
+	background: #ddd;
+}
+
+/* this selects <p> that is direct child of <div> */
+div > p {
+	background: blue;
+}
+
+/* 
+selects <p> that is the next sibling of <div>
+It selects all the elements that are adjacent siblings
+of specified elements. It selects the second element
+immediately after the first element.
+*/
+div + p {
+	background: red;
+}
+
+.all + * {
+	background: yellow;
+}
+
+/* style by attribute */
+
+/* target all <a> having href */
+a[href] {
+	border: black 1px solid;
+}
+
+/* target all <a> having target */
+a[target] {
+	color: red;
+}
+
+/* target all <a> having target value = _blank */
+a[target='_blank'] {
+	background: pink;
+}
+
+/* form styling */
+
+/* targets input tg having type=text & email */
+input[type='text'],
+input[type='email'] {
+	width: 50%;
+	margin-bottom: 5px;
+	display: block;
+}

@@ -1,0 +1,20 @@
+.container{
+ border: 2px black solid;
+  max-width: 900px;
+  /* 
+  this sets bottom/top to 20px
+  left/right to auto ie centre horizontally
+  */
+  margin: auto;
+  /* text-align: justify; */
+}
+.container-2{
+  border: 2px black solid;
+   width: 900px;
+   /* 
+   this sets bottom/top to 20px
+   left/right to auto ie centre horizontally
+   */
+
+ }
+ 

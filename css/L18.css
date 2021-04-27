@@ -1,0 +1,25 @@
+a{
+  text-decoration: none;
+color: red;
+margin: auto;
+width: 300px;
+}
+
+a:hover{
+color: blue;
+font-size: larger;
+}
+
+.btn{
+  background-color: lightskyblue;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

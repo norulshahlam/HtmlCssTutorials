@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* in order to use flex, u eed to set to display=flex and other
+flex attritubes to the parent container */
+.flex-container {
+	display: flex;
+	flex-direction: row;
+
+	/* flex-wrap: wrap; */
+}
+
+.item {
+	background: #f4f4f4;
+	border: #ccc solid 2px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+
+	/* this means grow - shrink - basis  */
+	flex: 1 1 200px;
+}
+
+/* 
+flex-grow: how fast / slow / normal rate u want the box to grow from its width
+flex shrink:  opp of flex-grow
+flex-basis: the min width of the box
+u can set all 3 attributes using 1 line
+u cant only noticed the min-width when u set the grow=0
+*/

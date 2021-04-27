@@ -1,0 +1,71 @@
+<!-- 
+    CSS allows animation of HTML elements without using JavaScript or Flash!
+
+    What are CSS Animations?
+
+    An animation lets an element gradually change from one style to another.
+    You can change as many CSS properties you want, as many times you want.
+    To use CSS animation, you must first specify some keyframes for the animation.
+    Keyframes hold what styles the element will have at certain times.
+ 
+    https://www.w3schools.com/css/css3_animations.asp
+
+    for this lesson we wil only focus on "to / from"
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/L36.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box box1">box-1
+        <p>
+            how long per iteration?
+            <br>
+            animation-duration: 2s;
+            <br>
+            how many times u want to iterate?
+            <br>
+            animation-iteration-count: 2;
+            <br>
+            once done iterating, u can set it to its final style
+            <br>
+            animation-fill-mode: forwards;
+        </p>
+    </div>
+    <div class="box box2">box-2
+        <p>
+            how long per iteration?
+            <br>
+            animation-duration: 2s;
+            <br>
+            how many times u want to iterate?
+            <br>
+            animation-iteration-count: infinite;
+
+        </p>
+    </div>
+    <div class="box box3">box-3
+        <p>
+            how long per iteration?
+            <br>
+            animation-duration: 2s;
+            <br>
+            how many times u want to iterate?
+            <br>
+            animation-iteration-count: infinite;
+            <br>
+            Defines whether or not the animation should
+            play in reverse on alternate cycles.
+            <br>
+            animation-direction: alternate;
+        </p>
+    </div>
+</body>
+
+</html>

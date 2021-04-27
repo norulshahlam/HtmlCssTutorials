@@ -1,0 +1,57 @@
+<!-- 
+we will learn about:
+
+box model
+
+margin
+
+padding
+
+css reset
+
+default styling of browser
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/L15.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 15</title>
+</head>
+
+<body>
+    <div class="box-1">
+        <h3>box-1.
+            padding is the space surrounding the inner border. no margin here. <br>
+            here the width is set to 500px but the browser shows additional of 20px bcos of padding size.
+            without "box-sizing: border-box", the total width will be current width + padding
+        </h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore ipsum magni facilis reiciendis
+        expedita fugiat? Tenetur, aspernatur adipisci! Ipsum!
+    </div>
+    <div class="box-2">
+        <h3>box-2.
+            padding is the space surrounding the inner border. no margin here. <br>
+            here the browser show the width at 500px, the same as the width set in css.
+            with "box-sizing: border-box" in use, the width will be fixed no matter what the padding size is.
+        </h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore ipsum magni facilis reiciendis
+        expedita fugiat? Tenetur, aspernatur adipisci! Ipsum!
+    </div>
+    <div class="box-3">
+        <h3>box-3. margin is the space surrounding the outer border
+            unlike box-1 & box-2, it 'sticks' tgt bcos of no margin.
+            box-3 has margin so it has spaces around its border
+        </h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore ipsum magni facilis reiciendis
+        expedita fugiat? Tenetur, aspernatur adipisci! Ipsum!
+    </div>
+    <br>
+
+</body>
+
+</html>

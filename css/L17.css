@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.container{
+
+  max-width: 900px;
+  /* 
+  this sets bottom/top to 20px
+  left/right to auto ie centre horizontally
+  */
+  margin: auto;
+  /* text-align: justify; */
+}
+
+.box{
+  background-color: khaki;
+padding: 20px;
+margin-bottom: 15px;
+border: 2px blue solid;
+}
+
+#box-2{
+  float: left;
+  width: 68%;
+}
+
+#box-3{
+  float: right;
+  width: 30%;
+}
+
+/* may not be adjacent to an earlier floating box. */
+.clr{
+  clear: both;
+}

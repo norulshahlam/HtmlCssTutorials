@@ -1,0 +1,60 @@
+<!--
+  
+  viewport units, and there are a number of them that do slightly different (all useful) things.
+  One unit is 1% of one of the axes of the viewport. These can be useful for responsive design.
+
+  One unit on any of the three values is 1% of the viewport axis. 
+  “Viewport” == browser window size == window object. 
+  If the viewport is 40cm wide, 1vw == 0.4cm.
+
+  1vw = 1% of viewport width
+  1vh = 1% of viewport height
+  1vmin = 1vw or 1vh, whichever is smaller
+  1vmax = 1vw or 1vh, whichever is larger
+
+  or
+
+  think of the screen having made up of 100 slices across
+  so 1 vw is 1 slice of it
+  
+  or the screen having made up of 100 slices top-bottom
+  so 1 vh is 1 slice of it
+
+  if a screen is 1200px width by 600px height, 
+  then 1vh = 6px, 1vw = 12px
+
+  https://css-tricks.com/viewport-sized-typography/
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/L27.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 27</title>
+  </head>
+  <body>
+    <header>
+      <h1>welcome to our website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        quae, magni quam totam quod debitis!
+      </p>
+      <a href="#" class="btn">Find out more</a>
+    </header>
+    <section>
+      <h3>about our company</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+        quibusdam voluptas, beatae voluptate ipsam ipsa atque eveniet in ab est
+        autem odio, veniam reiciendis asperiores doloremque necessitatibus aut
+        perferendis eum quidem adipisci. In cupiditate sunt delectus, possimus
+        quae culpa accusantium laborum numquam, amet, iusto pariatur porro
+        minima nobis assumenda esse?
+      </p>
+    </section>
+  </body>
+</html>

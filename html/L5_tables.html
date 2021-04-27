@@ -1,0 +1,68 @@
+<!--
+    in this lesson we will learn:
+
+    1. tables
+
+    table > define whole table
+    thead > table heading section 
+    tbody > table data section
+    tr > table row
+    th > table header col
+    td > table data col
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson5</title>
+
+    <style>
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- styling is not rekemended to use this way but i use it to show the borders -->
+    <table style="border: 1px solid black;">
+        <!-- the whole table-->
+        <thead>
+            <!--header content in a table-->
+            <tr>
+                <!-- table row -->
+                <th>first name</th> <!-- col for the heading row. use 'th' if u are defining 'thead'  -->
+                <th>last name</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- body content in a table. this is where all content in table is inserted -->
+            <tr>
+                <td>abc</td>
+                <!-- Defines a cell in a table. use 'td' if u are inside 'tbody'. see the diff above when 'thead' is used-->
+                <td>xyz</td>
+                <td>123@gmail.com</td>
+            </tr>
+            <tr>
+                <td>ddd</td>
+                <!-- Defines a cell in a table. use 'td' if u are inside 'tbody'. see the diff above when 'thead' is used-->
+                <td>dtg</td>
+                <td>7554@gmail.com</td>
+            </tr>
+            <tr>
+                <td>lho</td>
+                <!-- Defines a cell in a table. use 'td' if u are inside 'tbody'. see the diff above when 'thead' is used-->
+                <td>drth</td>
+                <td>976@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

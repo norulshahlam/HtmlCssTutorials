@@ -1,0 +1,91 @@
+<!--
+
+int this lesson we will learn:
+
+1. diff btwn display: none & visibility: hidden
+
+    display: none;
+    The element will be hidden, and the page will be displayed as 
+    if the element is not there in the 1st place.
+
+    visibility: hidden;
+    the element will still take up the same space as before. 
+    The element will be hidden, but still affect the layout:
+
+2. order of precedence for CSS
+
+    a. inline css ( html style attribute ) overrides css rules in style tag and css file
+    b. a more specific selector takes precedence over a less specific one
+    c. rules that appear later in the code override earlier rules if both have the same specificity.
+    d. A css rule with !important always takes precedence.
+
+    more details from (b), in order of lowest to highest priority
+
+    CSS Selector    	    Description
+    Inherited styles    	Lowest specificity of all selectors - 
+                            since an inherited style targets the element's parent, 
+                            and not the HTML element itself.
+                            Lowest specificity of all directly targeted selectors
+    element         	    Higher specificity than universal selector and inherited styles.
+    attribute	            Higher specificity than element selector
+    class	                Higher specificity than attribute, element and universal selectors.
+    ID	                    Higher specificity than class selector.
+    Combined selectors	    Gets the specificity of the selectors combined.
+    CSS properties set 
+    directly on element,
+    inside style attribute.	Stronger specificity than ID selector.
+
+    example:
+
+    <body>
+    <style>
+        body     { font-size: 10px; }
+        div      { font-size: 11px; }
+        [myattr] { font-size: 12px; }
+        .aText   { font-size: 13px; }
+        #myId    { font-size: 14px; }
+    </style>
+
+    <div                                > Text 1 </div>
+    <div myattr                         > Text 2 </div>
+    <div myattr class="aText"           > Text 3 </div>
+    <div myattr class="aText" id="myId" > Text 4 </div>
+</body>
+
+This example contains 5 different CSS rules which all target one or more of the div elements in the example.
+The first CSS rule targets the body element. The styles set for the body element in this CSS rule are inherited by the div elements. The CSS properties set in this CSS rule will have the lowest precedence for the div elements, as they are not set directly on the div elements, but rather on their parent element, the body element.
+The second CSS rule targets the div elements. This CSS rule is more specific to div elements that the styles inherited from the body element.
+The third CSS rule targets all HTML elements with an attribute named myattr. This is more specific than all div elements. Thus, the div element with the myattr attribute has this CSS rule applied. If you had set an attribute value on the attribute selector, it would have been even more specific.
+The fourth CSS rule targets all HTML elements with the CSS class named aText. The CSS class selector is more specific than a the div element selector and [myattr] attribute selector, so the div element with the CSS class aText will have this CSS rule applied.
+The fifth CSS rule targets the HTML element with the ID myId. The ID selector is more specific than the element selector, attribute selector and class selector, so the div element with the ID myId has this CSS rule applied.
+
+http://tutorials.jenkov.com/css/precedence.html
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/L23.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lesson 23</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1 class="hello">here class takes precendence that tags, although h1 is set later</h1>
+    <p>
+        here black is displayed because p tag comes later and override body tag. since both is element, the later will
+        override the earlier.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime cum, perferendis, obcaecati, consequatur
+        magnam omnis labore sint praesentium eius suscipit iure excepturi exercitationem aperiam qui natus. Quas omnis
+        incidunt, facere distinctio magnam consequuntur voluptates cumque non natus fugit earum commodi eos quo
+        quibusdam rem recusandae repellendus fugiat dolorem? Mollitia!
+    </p>
+</body>
+
+</html>

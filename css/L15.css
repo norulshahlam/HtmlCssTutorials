@@ -1,0 +1,38 @@
+/* css reset
+this applies to all tags
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+/* 
+box-sizing: border-box;
+The specified width and height (and respective min/max properties) on this element determine the border box of the element.
+*/
+
+.box-1 {
+  border: black 2px solid;
+  background-color: pink;
+  width: 500px;
+ padding: 20px;
+}
+
+
+.box-2 {
+  border: black 2px solid;
+  background-color: pink;
+  width: 500px;
+ padding: 20px;
+ box-sizing: border-box;
+}
+
+
+.box-3 {
+  border: black 2px solid;
+  background-color: pink;
+  width: 500px;
+ padding: 20px;
+ margin: 20px;
+}

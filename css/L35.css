@@ -1,0 +1,38 @@
+/* 
+To create a variable with global scope, declare it inside the 
+:root selector. The :root selector matches the document's root 
+element.
+*/
+
+:root {
+	--primary-color: steelblue;
+	--secondary-color: skyblue;
+	--light-color: #f4f4f4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	background: var(--light-color);
+}
+
+header {
+	background: var(--primary-color);
+	margin: 5px;
+}
+
+.container {
+	display: flex;
+	margin: 5px auto;
+	text-align: center;
+}
+.box-1,
+.box-2 {
+	border: black 1px solid;
+	margin: 5px;
+	background: var(--secondary-color);
+}

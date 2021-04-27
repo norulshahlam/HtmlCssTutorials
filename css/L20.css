@@ -1,0 +1,21 @@
+li{
+  display: inline;
+}
+
+li a{
+  padding-right: 20px;
+}
+
+img{
+  display: block;
+  margin: auto;
+}
+
+.box{
+  width: 32%;
+  background-color: lightgray;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+}

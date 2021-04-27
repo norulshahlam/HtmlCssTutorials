@@ -1,0 +1,41 @@
+/* this is for class */
+
+.primary_heading {
+	color: blue;
+}
+
+/* this is for id */
+#welcome {
+	background-color: pink;
+}
+
+#about {
+	background-color: chocolate;
+}
+
+/* multiple selectors */
+#welcome,
+#about {
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* nested selectors. most left is the parent
+ for this case, is for p inside welcome id */
+#welcome p {
+	font-family: fantasy;
+}
+
+/* element selectors. this styles the element tag itself */
+body {
+	background-color: blue;
+}
+
+/* combined selectors */
+.enquire.footer {
+	border: cyan 1px solid;
+	padding: 10px;
+	margin: 10px;
+	background: dimgray;
+}

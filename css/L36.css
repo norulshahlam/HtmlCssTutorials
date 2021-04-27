@@ -1,0 +1,46 @@
+body {
+	background: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes extend-me {
+	to {
+		width: 100%;
+		background-color: red;
+	}
+}
+
+.box {
+	background: white;
+	width: 200px;
+	height: 200px;
+	animation-name: extend-me;
+}
+.box1 {
+	/* length of time that an animation takes to complete one cycle */
+	animation-duration: 2s;
+
+	/* by default it is 1 */
+	animation-iteration-count: 2;
+
+	/* once done iterating, u can set it to its final style */
+	animation-fill-mode: forwards;
+}
+
+.box2 {
+	/* length of time that an animation takes to complete one cycle */
+	animation-duration: 2s;
+
+	/* by default it is 1 */
+	animation-iteration-count: infinite;
+}
+.box3 {
+	/* length of time that an animation takes to complete one cycle */
+	animation-duration: 2s;
+
+	/* by default it is 1 */
+	animation-iteration-count: infinite;
+
+	/* Defines whether or not the animation should play in reverse on alternate cycles. */
+	animation-direction: alternate;
+}

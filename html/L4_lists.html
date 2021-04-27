@@ -1,0 +1,89 @@
+<!--
+    in this lesson we will learn:
+
+    1. lists:
+        
+    unordered - An unordered list is simply a list of related items whose order does not matter
+
+    ordered - the order in which items are presented is important.
+    Because the order matters, instead of using a dot as the default list item marker, an ordered list uses numbers.
+    Ordered lists also have unique attributes available to them including start and reversed.
+
+    reversed - allows a list to appear in reverse order. An ordered list of five items numbered 1 to 5 may be reversed and ordered from 5 to 1.
+
+    Value Attribute
+    used on an individual <li> element within an ordered list to change its value within the list. 
+    The number of any list item appearing below a list item with a value attribute will be recalculated accordingly.
+
+https://learn.shayhowe.com/html-css/creating-lists/#:~:text=The%20main%20difference%20between%20an,an%20ordered%20list%20uses%20numbers.
+  
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson4</title>
+</head>
+
+<body>
+    <p>unordered list</p>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>carrot</li>
+        <li>date</li>
+    </ul>
+
+    <p>ordered list. by default it will start from 1</p>
+    <ol>
+        <li>apple</li>
+        <li>banana</li>
+        <li>carrot</li>
+        <li>date</li>
+    </ol>
+
+
+    <p>ordered list. u can define what number to start from. eg:30</p>
+    <ol start="30">
+        <li>apple</li>
+        <li>banana</li>
+        <li>carrot</li>
+        <li>date</li>
+    </ol>
+
+    <p>or do a reversed list!</p>
+    <ol reversed>
+        <li>apple</li>
+        <li>banana</li>
+        <li>carrot</li>
+        <li>date</li>
+    </ol>
+
+    <p> Value Attribute. u can also define any number in any part of the list. note: that any item after that will follow accordingly</p>
+    <ol>
+        <li>apple</li>
+        <li value="55">banana</li>
+        <li>carrot</li>
+        <li>date</li>
+    </ol>
+
+    <p>nested lists</p>
+    <ul>
+        <li>colors</li>
+        <li>numbers</li>
+        <li>food</li>
+        <ol>
+            <li>apple</li>
+            <li>banana</li>
+            <li>carrot</li>
+            <li>date</li>
+        </ol>
+        <li>drinks</li>
+    </ul>
+</body>
+
+</html>

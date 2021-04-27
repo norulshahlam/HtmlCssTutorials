@@ -1,0 +1,69 @@
+<!-- 
+    In CSS, selectors are patterns used to select the element(s) 
+    you want to style.
+
+    div p            this selects all <p> inside <div> 
+    div > p          this selects <p> that is direct child of <div>
+    div + p          selects <p> that is the next sibling of <div>
+    .all + *         same as above but select any element instead of specified element
+    a[href]          target all <a> having href
+    a[target]        target all <a> having target
+    a[target='_blank']  target all <a> having target value = _blank
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/L31.css">
+    <title>L31_adv_selectors</title>
+</head>
+
+<body>
+    <div class="tags">
+        <p> this selects p that is direct child of div.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, labore.</p>
+        <ul>
+            <li>item 1</li>
+            <li>
+                <p>item 2</p>
+            </li>
+            <li>item 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dicta?</p>
+    </div>
+
+    <p>this is result of div+p. This got selected bcos p is the next sibling of div <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et!</p>
+
+    <div class="links">
+        <a href="#">page 1</a><br>
+        <a href="#">page 2</a><br>
+        <a href="http://google.com">Google</a><br>
+        <a href="http://google.com" target="_self">Google - self</a><br>
+        <a href="http://google.com" target="_blank">Google - blank</a><br>
+
+    </div>
+    <br><b><br></b>
+    <div class="forms">
+        <input type="text" placeholder="Enter name">
+        <input type="email" placeholder="Enter email">
+        <input type="submit" value="submit">
+
+    </div>
+
+    <p>select any element that is direct descendant</p>
+
+    <div class="all">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, possimus.</p>
+        <h5>Lorem ipsum dolor sit amet.</h5>
+
+    </div>
+
+    <p>select me</p>
+</body>
+
+</html>

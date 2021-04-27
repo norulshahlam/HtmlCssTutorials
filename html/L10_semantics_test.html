@@ -1,0 +1,167 @@
+<!--
+    in this lesson 
+
+    2. we will do a simple website mainpage using semantic tags and content sectioning
+    1. we will learn about Content Sectioning:
+
+        Content sectioning elements allow you to organize the 
+        document content into logical pieces. Use the sectioning 
+        elements to create a broad outline for your page content, 
+        including header and footer navigation, and heading 
+        elements to identify sections of content.   
+
+        <address>	indicates that the enclosed HTML provides contact information for a person or people, or for an organization.
+        <article>	represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
+        <aside>     represents a portion of a document whose content is only indirectly related to the document's main content.
+        <footer>	represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.
+        <header>	represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.
+        <h1>, <h2>, 
+        <h3>, <h4>, 
+        <h5>, <h6>	represent six levels of section headings. 
+                    <h1> is the highest section level and <h6> is the lowest.
+        <hgroup>	represents a multi-level heading for a section of a document. It groups a set of <h1>–<h6> elements.
+        <main>	    represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+        <nav>	    represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+        <section>	epresents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document.
+
+        -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML5 Semantic Tags</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        #header {
+            margin-bottom: 15px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #main {
+            float: left;
+            width: 69%;
+        }
+
+        #sidebar {
+            float: right;
+            width: 29%;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        #footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .text-center {
+            display: block;
+            text-align: center;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="card">
+        <h1>My Website</h1>
+        <p>Just Another Website</p>
+    </header>
+
+    <!-- Main Content (left) -->
+    <main id="main">
+        <!-- Welcome Section -->
+        <section id="welcome" class="card">
+            <h2>Welcome To Our Website</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                cupiditate itaque possimus numquam corporis odit deserunt voluptas
+                repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+                temporibus! Sed. <br />
+                <a href="#" class="text-center">Click For More</a>
+            </p>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>From Our Blog</h2>
+            <!-- Article One -->
+            <article class="article">
+                <h3>Article One</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                    veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+                    totam accusantium officiis!
+                </p>
+            </article>
+            <!-- Article Two -->
+            <article class="article">
+                <h3>Article Two</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                    veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+                    totam accusantium officiis!
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Sidebar (right) -->
+    <aside id="sidebar" class="card">
+        <h3>Navigation</h3>
+        <!-- Navigation -->
+        <nav>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <hr />
+        <h3>Contact Us</h3>
+        <ul>
+            <li><strong>Address:</strong> 50 Main st, Boston MA</li>
+            <li><strong>Phone:</strong> (555) 555-5555</li>
+            <li><strong>Email:</strong> me@somethingcool.come</li>
+        </ul>
+    </aside>
+
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="text-center">Copyright &copy; My Website 2019</p>
+    </footer>
+</body>
+
+</html>

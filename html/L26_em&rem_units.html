@@ -1,0 +1,46 @@
+<!--
+    em vs rem
+
+    em units is - for the font-size property:
+    will be relative to the font-size of the parent element.
+    em units on other properties than font-size:
+    will be relative to the font-size of the current element. 
+    
+    rem units sizes will always be relative to the font-size 
+    of the root html element.
+
+    Compounding Effect: Trouble in Paradise
+    So far everything is well and good with using the em unit, 
+    but a problem can come about from the fact that the unit 
+    can compound from one level to the other.
+    See -> https://www.digitalocean.com/community/tutorials/css-rem-vs-em-units
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="../css/L26.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 26</title>
+  </head>
+  <body>
+    <div id="box-1">
+      <h3>box one</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod
+        fugiat tempore quos deserunt similique sint expedita optio dolorem
+        voluptate!
+      </p>
+    </div>
+    <div id="box-2">
+      <h3>box two</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod
+        fugiat tempore quos deserunt similique sint expedita optio dolorem
+        voluptate!
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!-- 
+    we will learn about:
+    floats and how to align 2 section to each other.
+
+    Floats were used before Flexbox and Grid to create entire layouts. 
+    It isn't used as much anymore, but you may encounter it in legacy code.
+
+    The float property essentially "floats" an element to the 
+    left or right of its container.
+
+    It also removes that element from the normal flow of the document. 
+    For example, if you float an image that has a caption, 
+    its caption will end up filling up space around the image. The image is removed from the normal flow of the document.
+
+    You can clear a float by using the clear property on the 
+    element you wish the document to return to its normal flow from. 
+    If you added the clear property for the image caption, the caption 
+    would adjust itself underneath the image and that is where the 
+    document would return to its original flow.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/L17.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 17</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>heading </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>heading</h3>
+            <p>s
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+
+        <!-- 
+            Note: Elements after a floating element will flow around it. 
+            To avoid this, use the clear property or the clearfix hack
+         -->
+        <div class="clr"></div>
+
+        <div id="box-4" class="box">
+            <h3>the clr class ABOVE do not allow floating elements on both sides</h3>
+            <p>
+                The clear property is used to specify that which side of floating elements are not allowed to float. It
+                sets or returns the position of the element in relation to floating the objects. If it is not used, then
+                this div will go up and behing these flaoting elements. try to remove the class=clr to see the diff.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: gray;
+  color: white;
+  padding-top: 100px;
+  text-align: center;
+}
+
+h1 {
+  display: none;
+}
+
+/* for smart phone, as the screen always is <500px width*/
+@media (max-width: 500px) {
+  body {
+    background: red;
+  }
+
+  /* display smartphone when screen is <500px width*/
+  #smartphone h1 {
+    display: block;
+  }
+}
+
+/* for tablet, as the screen always is >500px & <768 width*/
+@media (min-width: 501px) and (max-width: 768px) {
+  body {
+    background: blue;
+  }
+
+  /* display tablet when screen is <500px width*/
+  #tablet h1 {
+    display: block;
+  }
+}
+
+
+
+/* for normal screen size, as the screen always is >769px & <1200 width*/
+@media (min-width: 769px) and (max-width: 1200px) {
+    body {
+      background: green;
+    }
+  
+    /* display normal when screen is <500px width*/
+    #normal h1 {
+      display: block;
+    }
+  }
+  
+
+  
+/* for widescreenn size, as the screen always is >1200 width*/
+@media (min-width: 1200px) {
+    body {
+      background: black;
+    }
+  
+    /* display widescreen when screen is <500px width */
+    #widescreen h1 {
+      display: block;
+    }
+  }
+
+  
+/* for landscape size, as the screen always is >500px height */
+@media (max-height: 1200px) {
+    body {
+      background: orange;
+    }
+  
+    /* display landscape when screen is <500px height. change orientation to see the changes */
+    #landscape h1 {
+      display: block;
+    }
+  }

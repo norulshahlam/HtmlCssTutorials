@@ -1,0 +1,88 @@
+<!-- 
+
+    we will learn on how to:
+
+    about inline and block and inline-block element
+
+    inline-block Value
+    Compared to display: inline, the major difference is that 
+    inline-block allows to set a width and height on the element.
+
+    Compared to display: inline-block, the top and bottom margins/paddings 
+    are respected, but with display: inline, they are not.
+
+    Compared to display: block, the major difference is that display: 
+    inline-block does not add a line-break after the element, 
+    so the element can sit next to other elements.
+
+        https://www.w3schools.com/css/css_inline-block.asp
+
+        how to change from inine to block and vice versa
+
+        only block elements can be centred
+
+   
+  
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/L20.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 20</title>
+</head>
+
+<body>
+    <p>1st: below is a list, which is a block element by default.
+        for u to arrange it next to each other, u can simply change the display to inline.
+    </p>
+    <ul>
+        <li> <a href="#">home</a></li>
+        <li> <a href="#">about</a></li>
+        <li> <a href="#">services</a></li>
+        <li> <a href="#">contact</a></li>
+    </ul>
+    <br><br>
+    <p>2nd: below is an img and we want to centre it by using auto-margin.
+        auto-margin works for block element but img is inline by default
+        so we cant set to auto-margin. in order to
+        achieve this, we can change the display to block.
+    </p>
+    <img src="../img/java.png" alt="">
+
+    <br><br>
+
+    <p>
+        3rd: we have 3 boxes seperated by div but we wish to arrange it in 1 line,
+        with equal width %. div is by default a block element so we change to inline
+        so the boxes are arranged in 1 line but we cant use width % bcos that only
+        applies to block elements. so to overcome this, we use inline-block.
+
+    </p>
+    <div class="box">
+        <h3>inline-block</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facere tempore sit odio repellendus,
+            dolore maiores libero deleniti eaque possimus.
+        </p>
+    </div>
+    <div class="box">
+        <h3>inline-block</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facere tempore sit odio repellendus,
+            dolore maiores libero deleniti eaque possimus.
+        </p>
+    </div>
+    <div class="box">
+        <h3>inline-block</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facere tempore sit odio repellendus,
+            dolore maiores libero deleniti eaque possimus.
+        </p>
+    </div>
+</body>
+
+</html>

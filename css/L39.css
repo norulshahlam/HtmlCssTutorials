@@ -1,0 +1,39 @@
+body {
+	background: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.box {
+	background: white;
+	width: 200px;
+	height: 200px;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+}
+
+.box2 {
+	transform: rotate(90deg);
+}
+.box3 {
+	transform: skew(25deg);
+}
+.box4 {
+	transform: scale(2);
+}
+
+/* pushes right 100px */
+.box5 {
+	transform: translateX(100px);
+}
+
+/* pushes down 100px */
+.box6 {
+	transform: translateY(100px);
+}

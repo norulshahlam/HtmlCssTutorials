@@ -1,0 +1,54 @@
+<!-- 
+    css grid
+
+    CSS Grid Layout is the most powerful layout system available in CSS. 
+    It is a 2-dimensional system, meaning it can handle both columns and rows, 
+    unlike flexbox which is largely a 1-dimensional system. 
+    You work with Grid Layout by applying CSS rules both to a parent element 
+    (which becomes the Grid Container) and to that element’s children 
+    (which become Grid Items).
+
+    more info: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+    grid vs flex
+
+    https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184
+
+    example here is only grid columns
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/L42.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid1">
+        <div class="item">set at 200px</div>
+        <div class="item">set at 200px</div>
+        <div class="item">set at 200px</div>
+        <div class="item">set at 200px</div>
+    </div>
+    <br>
+    <div class="grid2">
+        <div class="item">set at auto</div>
+        <div class="item">set at auto</div>
+        <div class="item">set at auto</div>
+        <div class="item">set at auto</div>
+    </div>
+    <br>
+    <div class="grid3">
+        <div class="item">set at 1fr</div>
+        <div class="item">set at 2fr, uses grid gap</div>
+        <div class="item">set at 1fr</div>
+        <div class="item">set at 1fr</div>
+    </div>
+</body>
+
+</html>

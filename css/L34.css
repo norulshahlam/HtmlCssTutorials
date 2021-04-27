@@ -1,0 +1,43 @@
+.container1 {
+	display: flex;
+}
+
+/* shadow box */
+.container1 .box {
+	padding: 1rem;
+	margin: 1rem;
+	background: coral;
+	color: #fff;
+
+	/* offset-x | offset-y | color */
+	box-shadow: 10px 10px teal;
+}
+
+.container2 {
+	display: flex;
+}
+
+/* blur effect */
+.container2 .box {
+	padding: 1rem;
+	margin: 1rem;
+	background: coral;
+	color: #fff;
+
+	/* offset-x | offset-y | blur-radius | color */
+	box-shadow: 10px 10px 20px teal;
+}
+.container3 {
+	display: flex;
+}
+
+/* spread radius */
+.container3 .box {
+	padding: 1rem;
+	margin: 1rem;
+	background: coral;
+	color: #fff;
+
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 3px 5px 10px 10px teal;
+}

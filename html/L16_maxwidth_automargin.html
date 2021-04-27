@@ -1,0 +1,94 @@
+<!-- 
+we will learn about:
+
+    max-width attributes - enable responsiveness
+
+    automargin - this centralises the contents in a container.
+    You can set the margin property to auto to horizontally 
+    center the element WITHIN ITS CONTAINER.
+    The element will then take up the specified width, and the remaining 
+    space will be split equally between the left and right margins.
+
+    auto-margin only works for block elements
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/L16.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 16</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>this uses max-width=900px. this enable responsiveness when for changing screen size.
+                result: any px &lt 900px, it will resize itself. if &gt 900px, it will
+                remain fixed at 900px
+                <br> also uses :width: auto margin:, where item is centralized horizontally
+                as a result, this box is centred nomatter what the browser size is.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>heading</h3>
+            <p>s
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div id="box-1" class="box">
+            <h3>this doesnt use max-width. so content is not responsive when screen size change.
+                contents will be hidden on the side and user has to scroll to the side to view contents
+                this also doesnt use :width: auto margin:, so item is placed on most left by default</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>heading</h3>
+            <p>s
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque doloremque aut aliquam
+                illo
+                ipsum
+                pariatur hic cum perspiciatis vel?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

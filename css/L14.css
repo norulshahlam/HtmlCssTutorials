@@ -1,0 +1,66 @@
+#box-1 {
+  border: black 2px solid;
+  border: black 1px solid;
+}
+
+#box-2 {
+  border: black 2px solid;
+  background-image: url("../img/thor.jpg");
+  color: pink;
+}
+
+#box-2a {
+  border: black 2px solid;
+  background-image: url("../img/thor.jpg");
+  color: aqua;
+  background-repeat: no-repeat;
+  width:auto;
+}
+
+#box-3 {
+  border: black 2px solid;
+  background-image: url("../img/thor.jpg");
+  color: cornsilk;
+  width: 500px;
+  height: 250px;
+}
+
+#box-4 {
+  border: black 2px solid;
+  color: cornsilk;
+  width: 500px;
+  height: 250px;
+
+  /* background-image: url("../img/thor.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+
+  /* below code is same as above */
+
+  background: url("../img/thor.jpg") no-repeat center center / cover;
+}
+
+#box-5 {
+  border: black 2px solid;
+  background: url("../img/thor.jpg") no-repeat 50px 50px / cover;
+  color: black;
+  width: 500px;
+  height: 250px;
+}
+
+
+#box-6 {
+    border: black 2px solid;
+    background: url("../img/java.png") no-repeat center center;
+    color: black;
+    
+  }
+#box-7 {
+    border: black 2px solid;
+    background: url("../img/java.png") no-repeat center center;
+    background-attachment: fixed;
+    color: black;
+    
+  }
+  

@@ -1,0 +1,87 @@
+<!--
+    in this lesson we will learn:
+
+    all about fonts
+
+    web safe fonts - fonts that are supported in all browsers
+    https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+    non-safe fonts - u might wanna include the font files in the html file,
+    or link them on external url
+
+    font stack - >1 font style is included. browser will use the first
+    style, and will go to the next if the 1st isn't found. u can use
+    your own collection of font stacks
+
+    default font sixe is 16px
+
+    CSS Units - several different units for expressing a length.
+    Absolute Lengths - are fixed and a length expressed in any of these will
+    appear as exactly that size.
+
+    Absolute length units are not recommended for use on screen, 
+    because screen sizes vary so much. However, they can be used if 
+    the output medium is known, such as for print layout.  
+
+    cm	    centimeters
+    mm  	millimeters
+    in	    inches (1in = 96px = 2.54cm)
+    px *	pixels (1px = 1/96th of 1in)
+    pt  	points (1pt = 1/72 of 1in)
+    pc	    picas (1pc = 12 pt)
+
+    Relative Lengths
+    Relative length units specify a length relative to another length property. 
+    Relative length units scale better between different rendering medium.
+
+    em	    Relative to the font-size of the element (2em means 2 times the size of the current font)	
+    ex	    Relative to the x-height of the current font (rarely used)	
+    ch	    Relative to the width of the "0" (zero)	
+    rem 	Relative to font-size of the root element	
+    vw	    Relative to 1% of the width of the viewport*	
+    vh  	Relative to 1% of the height of the viewport*	
+    vmin	Relative to 1% of viewport's* smaller dimension	
+    vmax	Relative to 1% of viewport's* larger dimension	
+    %   	Relative to the parent element
+
+    source: https://www.w3schools.com/cssref/css_units.asp
+    
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- external font from url-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson13</title>
+    <link rel="stylesheet" href="../css/L13.css">
+</head>
+
+<body>
+    <div id="welcome">
+        <h2 class="primary_heading">welcome</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti doloremque expedita iure eius nisi
+            reprehenderit, pariatur nemo libero perspiciatis est accusamus dolore, provident totam excepturi! Vel
+            delectus, beatae voluptates laboriosam ab illo facilis, porro, error atque quas magnam praesentium rerum
+            temporibus ipsum nam eaque voluptatum nemo in! Quas, id vero!
+        </p>
+    </div>
+    <div id="about">
+        <h2>about</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti doloremque expedita iure eius nisi
+            reprehenderit, pariatur nemo libero perspiciatis est accusamus dolore, provident totam excepturi! Vel
+            delectus, beatae voluptates laboriosam ab illo facilis, porro, error atque quas magnam praesentium rerum
+            temporibus ipsum nam eaque voluptatum nemo in! Quas, id vero!
+        </p>
+    </div>
+</body>
+
+</html>
