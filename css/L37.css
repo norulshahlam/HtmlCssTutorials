@@ -9,10 +9,11 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
+	/* 2nd step - add in the animation property */
 	animation: animate1 5s forwards infinite ease-in-out;
 }
 
-/* using % means % of the animation duration in s */
+/* 1st step - using % means % of the animation duration in s */
 @keyframes animate1 {
 	25% {
 		top: 0;
