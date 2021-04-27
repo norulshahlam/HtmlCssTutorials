@@ -6,6 +6,7 @@ div p {
 /* this selects <p> that is direct child of <div> */
 div > p {
 	background: blue;
+	color: white;
 }
 
 /* 
@@ -15,9 +16,10 @@ of specified elements. It selects the second element
 immediately after the first element.
 */
 div + p {
-	background: red;
+	background: green;
+	color: white;
 }
-
+/* any next siblling element will get this */
 .all + * {
 	background: yellow;
 }

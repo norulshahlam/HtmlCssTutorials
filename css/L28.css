@@ -5,8 +5,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-/* in order to use flex, u eed to set to display=flex and other
-flex attritubes to the parent container */
+/* in order to use flex, u need to set to display=flex and other
+flex attritubes to the parent container. then the child element will be on flex */
 .flex-container {
 	display: flex;
 	flex-direction: row;
@@ -23,7 +23,7 @@ flex attritubes to the parent container */
 	border-radius: 10px;
 
 	/* this means grow - shrink - basis  */
-	flex: 1 1 200px;
+	flex: 1 2 200px;
 }
 
 /* 

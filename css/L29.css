@@ -8,7 +8,7 @@ body {
 .flex-container {
 	background-color: gray;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 
 	/* align items to its y-axis */
 	align-items: center;
@@ -25,9 +25,20 @@ body {
 	border-radius: 10px;
 }
 
+.item-1{
+	flex: 2 1 50px;
+}
+.item-2{
+	flex: 1 2 auto;
+}
+.item-1{
+	flex: 1 1 50px;
+}
+
 /* 
 flex-grow: how fast / slow / normal rate u want the box to grow from its width
 flex shrink:  opp of flex-grow
 flex-basis: the min width of the box
 u can set all 3 attributes using 1 line
+  flex: 0 1 auto;
 */

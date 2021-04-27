@@ -7,6 +7,7 @@ li {
 .flex {
 	display: flex;
 	align-content: center;
+	border-radius: 10px;
 }
 
 .flex > ul {
@@ -27,7 +28,8 @@ li {
 
 /* every 3rd child
 '0' refers to the start of the child to style.
-for this case, u start at the beginning
+for this case, u start at the beginning and
+apply to every 3rd child
 */
 .every-3rd-child li:nth-child(3n + 0) {
 	background: yellow;
@@ -35,7 +37,8 @@ for this case, u start at the beginning
 
 /* every 3rd child starting from 4th-child.
 '4' refers to the start of the child to style.
-for this case, u start at the 4th child
+for this case, u start at the 4th child and
+apply to every 3rd child
 */
 .every-3rd-child-4 li:nth-child(3n + 4) {
 	background: pink;

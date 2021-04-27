@@ -2,7 +2,8 @@
     em vs rem
 
     em units is - for the font-size property:
-    will be relative to the font-size of the parent element.
+
+    em will be relative to the font-size of the parent element.
     em units on other properties than font-size:
     will be relative to the font-size of the current element. 
     
@@ -19,21 +20,24 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <link rel="stylesheet" href="../css/L26.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lesson 26</title>
-  </head>
-  <body>
-    <div id="box-1">
-      <h3>box one</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod
-        fugiat tempore quos deserunt similique sint expedita optio dolorem
-        voluptate!
-      </p>
-    </div>
+
+<head>
+  <link rel="stylesheet" href="../css/L26.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lesson 26</title>
+</head>
+
+<body>
+  <h1>Compounding effect using em</h1>
+  <div id="box-1">
+    <h3>box one</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod
+      fugiat tempore quos deserunt similique sint expedita optio dolorem
+      voluptate!
+    </p>
+<!--  -->
     <div id="box-2">
       <h3>box two</h3>
       <p>
@@ -41,6 +45,16 @@
         fugiat tempore quos deserunt similique sint expedita optio dolorem
         voluptate!
       </p>
+      <div id="box-3">
+        <h3>box three</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod
+          fugiat tempore quos deserunt similique sint expedita optio dolorem
+          voluptate!
+        </p>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

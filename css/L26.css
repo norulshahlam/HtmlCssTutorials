@@ -1,8 +1,9 @@
-#box-2 h3{
-    font-size: 2rem;
+#box-1{
+    font-size: 1em;
 }
-
-#box-2 p{
-    font-size: 1.5rem;
-    line-height: 2rem;
+#box-2{
+    font-size: 1.5em;
+}
+#box-3{
+    font-size: 1.5em;
 }
