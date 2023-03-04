@@ -6,6 +6,7 @@ body {
   text-align: center;
 }
 
+/* hide elements having <div> tag by default */
 h1 {
   display: none;
 }
@@ -19,7 +20,6 @@ h1 {
   /* display smartphone when screen is <500px width*/
   #smartphone h1 {
     display: block;
-  
   }
 }
 
@@ -31,11 +31,9 @@ h1 {
 
   /* display tablet when screen is <500px width*/
   #tablet h1 {
-  
     display: block;
   }
 }
-
 
 
 /* for normal screen size, as the screen always is >769px & <1200 width*/
@@ -47,13 +45,10 @@ h1 {
     /* display normal when screen is <500px width*/
     #normal h1 {
       display: block;
-   
     }
   }
   
-
-  
-/* for widescreenn size, as the screen always is >1200 width*/
+/* for widescreen size, as the screen always is >1200 width*/
 @media (min-width: 1200px) {
     body {
       background: black;
@@ -62,10 +57,8 @@ h1 {
     /* display widescreen when screen is <500px width */
     #widescreen h1 {
       display: block;
-     
     }
   }
-
   
 /* for landscape size, as the screen always is >500px height */
 @media (min-height: 1200px) {
@@ -76,6 +69,5 @@ h1 {
     /* display landscape when screen is <500px height. change orientation to see the changes */
     #landscape h1 {
       display: block;
-     
     }
   }

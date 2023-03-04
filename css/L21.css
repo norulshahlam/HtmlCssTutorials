@@ -1,6 +1,7 @@
 .box {
 	width: 100px;
 	height: 100px;
+	background: black;
 }
 
 .container {
@@ -38,7 +39,7 @@
 #box-5 {
 	background: orange;
 	position: sticky;
-	top: 0px;
+	top: 10px;
 	overflow-y: scroll;
 }
 

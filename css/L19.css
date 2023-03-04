@@ -28,6 +28,7 @@ body {
 
 .side-menu li a:hover {
 	color: coral;
+	background-color: cornflowerblue;
 }
 
 .nav-bar {
